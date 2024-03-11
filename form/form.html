@@ -9,13 +9,15 @@
     <!-- font import -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Itim&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Itim&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
     <div class="container">
         <h1 id="title">Survey Form</h1>
-        <p id="description">something something</p>
+        <p id="description">We would like to hear your thoughts.</p>
 
         <form method="post" id="survey-form">
             <!-- general info -->
@@ -46,19 +48,35 @@
             <!-- radio buttons -->
             <div class="form-input">
                 <legend>Are penguins birds?</legend>
-                <label><input id="yes" type="radio" class="inline" name="radio-class" value="yes" />Yes</label>
-                <label><input id="no" type="radio" class="inline" name="radio-class" value="no" />No</label>
+                <ul>
+                    <li>
+                        <label><input id="yes" type="radio" name="radio-class" value="yes" />Yes</label>
+                    </li>
+                    <li>
+                        <label><input id="no" type="radio" name="radio-class" value="no" />No</label>
+                    </li>
+                </ul>
             </div>
 
             <!-- checkboxes -->
             <div class="form-input">
-                <label><input class="checkbox" type="checkbox" value="op1" />Option 1</label>
-                <label><input class="checkbox" type="checkbox" value="op2" />Option 2</label>
-                <label><input class="checkbox" type="checkbox" value="op3" />Option 3</label>
+                <legend>Which one would you win against in a fight?</legend>
+                <ul>
+                    <li>
+                        <label><input class="checkbox" type="checkbox" value="op1" />Kangaroo</label>
+                    </li>
+                    <li>
+                        <label><input class="checkbox" type="checkbox" value="op2" />Lion</label>
+                    </li>
+                    <li>
+                        <label><input class="checkbox" type="checkbox" value="op3" />Bear</label>
+                    </li>
+                </ul>
             </div>
 
             <!-- textarea -->
             <div class="form-input">
+                <legend>Any comments?</legend>
                 <textarea id="comment" class="textarea" name="comment"
                     placeholder="Enter your comment here..."></textarea>
             </div>
