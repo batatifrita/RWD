@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="formstyles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <!-- font import -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Itim&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <h1 id="title">Survey Form</h1>
+        <p id="description">something something</p>
+
+        <form method="post" id="survey-form">
+            <!-- general info -->
+            <div class="form-input">
+                <label for="name" id="name-label">Name <input id="name" required
+                        placeholder="Enter your name" /></label>
+            </div>
+            <div class="form-input"></div>
+            <label for="email" id="email-label">Email <input id="email" type="email" placeholder="Enter your email"
+                    required /></label>
+            <div class="form-input">
+                <label for="number" id="number-label">How many pets do you own?<input id="number" type="number" min="0"
+                        max="10" placeholder="Number" /></label>
+            </div>
+
+            <!-- dropdown -->
+            <div class="form-input">
+                <legend>Pick an animal:</legend>
+                <select id="dropdown" required>
+                    <option disabled selected value>Select an animal</option>
+                    <option value="1">Capybara</option>
+                    <option value="2">Seal</option>
+                    <option value="3">Shark</option>
+                    <option value="4">Deer</option>
+                </select>
+            </div>
+
+            <!-- radio buttons -->
+            <div class="form-input">
+                <legend>Are penguins birds?</legend>
+                <label><input id="yes" type="radio" class="inline" name="radio-class" value="yes" />Yes</label>
+                <label><input id="no" type="radio" class="inline" name="radio-class" value="no" />No</label>
+            </div>
+
+            <!-- checkboxes -->
+            <div class="form-input">
+                <label><input class="checkbox" type="checkbox" value="op1" />Option 1</label>
+                <label><input class="checkbox" type="checkbox" value="op2" />Option 2</label>
+                <label><input class="checkbox" type="checkbox" value="op3" />Option 3</label>
+            </div>
+
+            <!-- textarea -->
+            <div class="form-input">
+                <textarea id="comment" class="textarea" name="comment"
+                    placeholder="Enter your comment here..."></textarea>
+            </div>
+
+            <!-- submit -->
+            <div class="form-input">
+                <input id="submit" type="submit" value="Submit" />
+            </div>
+
+        </form>
+    </div>
+</body>
+
+</html>
