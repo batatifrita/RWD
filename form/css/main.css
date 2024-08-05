@@ -29,12 +29,11 @@ li {
 .container{
   font-family:'Source Code Pro', monospace;
   width: 60vw;
-  overflow-x:hidden;
-  overflow-y:scroll;
+  overflow:hidden;
   max-width: 400px;
   min-width: 300px;
-  max-height:750px;
-  margin:40px auto;
+  max-height:780px;
+  margin:30px auto;
   color:#E4E8F1;
   background: rgb(41, 51, 81, 0.65);
   backdrop-filter: blur(20px);
