@@ -31,9 +31,9 @@ li {
   width: 60vw;
   overflow-x:hidden;
   overflow-y:scroll;
-  max-width: 350px;
+  max-width: 400px;
   min-width: 300px;
-  max-height:650px;
+  max-height:750px;
   margin:20px auto;
   color:#E4E8F1;
   background: rgb(41, 51, 81, 0.65);
