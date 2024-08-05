@@ -5,6 +5,7 @@ body {
     background-image: url('../imgs/background.png');
     background-size:fill;
     font-size:12px;
+    text-transform:uppercase;
   }
 
 li {
@@ -13,37 +14,54 @@ li {
 
 }
 
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #BBC6DD;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1B2336;
+}
+
 .container{
-  font-family:'Poppins', sans-serif;
+  font-family:'Source Code Pro', monospace;
   width: 60vw;
-  max-width: 400px;
+  overflow-x:hidden;
+  overflow-y:scroll;
+  max-width: 350px;
   min-width: 300px;
-  max-height:800px;
+  max-height:650px;
   margin:20px auto;
   color:#E4E8F1;
   background: rgb(41, 51, 81, 0.65);
   backdrop-filter: blur(20px);
   padding:10px 50px 10px 50px;
-  border-radius: 20px;
+  /* border-radius: 20px; */
 }
 
 .container h1{
-  font-family:'Itim';
+  font-family:'Press Start 2P';
   text-transform: uppercase;
   text-align: center;
-  font-size:30px;
+  font-size:28px;
 }
 
 .container p{
   text-align: center;
 }
 
+
 input[type="submit"]{
+  font-family:'Source Code Pro', monospace;
+  text-transform: uppercase;
   display:block;
   width:20%;
   background-color:#9387AA;
   border: 1px solid #6E647D;
-  border-radius:20px;
+  /* border-radius:20px; */
   color:#222B44;
   margin: 1em auto;
   height:2em;
@@ -55,23 +73,28 @@ input[type="submit"]{
 input, textarea {
   background-color: #222B44;
   border: 1px solid #1B2336;
-  border-radius:20px;
+  /* border-radius:20px; */
   margin:5px 0px 15px 0px; 
   min-height:2em;
   color: #fff;
   padding:5px 5px 5px 15px;
   width:100%;
+  font-family: 'Source Code Pro', monospace;
 }
+
 
 select {
   background-color: #222B44;
   border: 1px solid #1B2336;
-  border-radius:20px;
+  /* border-radius:20px; */
   margin:5px 0px 15px 0px; 
   min-height:2.5em;
-  color: #BBC6DD;
-  padding:5px 5px 5px 15px;
+  color: #445988;
+  padding:10px 5px 10px 15px;
   width:105%;
+  font-family:'Source Code Pro', monospace;
+  font-size:11px;
+  text-transform:uppercase;
 }
 
 input[type="radio"], input[type="checkbox"]{
@@ -80,11 +103,14 @@ input[type="radio"], input[type="checkbox"]{
   margin:5px 5px 15px 0px; 
   vertical-align: baseline;
   min-height:0;
+  accent-color: #445988;
 }
+
 
 ::placeholder {
   color: #445988;
-  font-family:'Poppins';
+  font-family:'Source Code Pro', monospace;
   font-size:11px;
+  text-transform:uppercase;
 }
 
